@@ -50,7 +50,7 @@ let interval = setInterval(() => {
 	}
 
 	ls.next(state => {
-		document.getElementById("text").innerHTML += "<br/>Generation "+g+" : "+state;
+		document.getElementById("text").innerHTML += "\nGeneration "+g+" : "+state;
 		g++;
 	});
 }, 500);

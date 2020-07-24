@@ -13,6 +13,7 @@ let ls = new LSystem("XYF+-");
 ls.addRule("X", "X+YF+");
 ls.addRule("Y", "-FX-Y");
 
+// XY is also cool
 ls.setState("XF"); // Axiom
 
 let size = 10;
@@ -48,7 +49,7 @@ let interval = setInterval(() => {
 	}
 
 	ls.next(state => {
-		document.getElementById("text").innerHTML += "<br/>Generation "+g+" : "+state;
+		document.getElementById("text").innerHTML += "\nGeneration "+g+" : "+state;
 		g++;
 	});
 }, 1000 / 16);

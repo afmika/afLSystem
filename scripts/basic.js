@@ -18,6 +18,6 @@ ls.addProcedure("B", function() {
 });
 
 document.getElementById("text").innerHTML = "Rule :"+JSON.stringify(ls.getRule());
-ls.exec(3, function(g, state) {
+ls.exec(4, function(g, state) {
 	document.getElementById("text").innerHTML += "</br>Generation "+g+" : "+ state;
 });
